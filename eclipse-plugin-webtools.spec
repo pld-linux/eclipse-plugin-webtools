@@ -10,6 +10,7 @@ URL:		http://www.eclipse.org/webtools/
 Source0:	http://dl.google.com/eclipse/plugin/3.3/zips/gpe-e33-latest.zip
 # Source0-md5:	955d207982a0ec954b1c067019c33694
 BuildRequires:	rpm-javaprov
+BuildRequires:	unzip
 Requires:	eclipse >= 3.3
 Requires:	eclipse-gef
 #  WST Common UI (2.0.2.v200802150100-7C5EH3E9RvTVnirrspVz0bmP7g8d) requires plug-in "org.eclipse.draw2d (3.2.0)", or compatible.
