@@ -2,7 +2,7 @@
 Summary:	Web Tools Platform (WTP) Project
 Name:		eclipse-plugin-webtools
 Version:	2.0.3
-Release:	1
+Release:	0.2
 License:	EPL v1.0
 Group:		Development/Tools
 URL:		http://www.eclipse.org/webtools/
@@ -43,6 +43,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%{eclipsedir}/features/org.eclipse.jpt.feature_*
+%{eclipsedir}/features/org.eclipse.jst_*
+%{eclipsedir}/features/org.eclipse.jst.common_*
+%{eclipsedir}/features/org.eclipse.jst.enterprise_*
+%{eclipsedir}/features/org.eclipse.jst.server_*
+%{eclipsedir}/features/org.eclipse.jst.web_*
+%{eclipsedir}/features/org.eclipse.jst.webpageeditor.feature_*
 %{eclipsedir}/features/org.eclipse.wst_*
 %{eclipsedir}/features/org.eclipse.wst.common_*
 %{eclipsedir}/features/org.eclipse.wst.server_*
@@ -123,6 +130,9 @@ rm -rf $RPM_BUILD_ROOT
 %{eclipsedir}/plugins/org.eclipse.jst.pagedesigner.jsp.core_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.server.core_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.server.generic.core_*.jar
+%{eclipsedir}/plugins/org.eclipse.jst.server.generic.jboss_*
+%{eclipsedir}/plugins/org.eclipse.jst.server.generic.jonas_*
+%{eclipsedir}/plugins/org.eclipse.jst.server.generic.oc4j_*
 %{eclipsedir}/plugins/org.eclipse.jst.server.generic.ui_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.server.installable_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.server.preview.adapter_*.jar
@@ -131,6 +141,7 @@ rm -rf $RPM_BUILD_ROOT
 %{eclipsedir}/plugins/org.eclipse.jst.server.ui.doc.user_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.server.ui.infopop_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.server.ui_*.jar
+%{eclipsedir}/plugins/org.eclipse.jst.server.websphere.core_*
 %{eclipsedir}/plugins/org.eclipse.jst.servlet.ui.infopop_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.servlet.ui_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.standard.schemas_*.jar
@@ -145,6 +156,8 @@ rm -rf $RPM_BUILD_ROOT
 %{eclipsedir}/plugins/org.eclipse.jst.ws.axis.creation.ui_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.axis.infopop_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.axis.ui.doc.user_*.jar
+%{eclipsedir}/plugins/org.eclipse.jst.ws.consumption_*
+%{eclipsedir}/plugins/org.eclipse.jst.ws.consumption.infopop_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.consumption.ui.doc.user_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.consumption.ui_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.creation.ejb.ui_*.jar
@@ -154,6 +167,11 @@ rm -rf $RPM_BUILD_ROOT
 %{eclipsedir}/plugins/org.eclipse.jst.ws_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.uddiregistry_*.jar
 %{eclipsedir}/plugins/org.eclipse.jst.ws.ui_*.jar
+%{eclipsedir}/plugins/org.eclipse.wst.command.env_*
+%{eclipsedir}/plugins/org.eclipse.wst.command.env.core_*.jar
+%{eclipsedir}/plugins/org.eclipse.wst.command.env.doc.user_*.jar
+%{eclipsedir}/plugins/org.eclipse.wst.command.env.infopop_*.jar
+%{eclipsedir}/plugins/org.eclipse.wst.command.env.ui_*.jar
 %{eclipsedir}/plugins/org.eclipse.wst.common.core_*.jar
 %{eclipsedir}/plugins/org.eclipse.wst.common.emf_*.jar
 %{eclipsedir}/plugins/org.eclipse.wst.common.emfworkbench.integration_*.jar
@@ -225,23 +243,3 @@ rm -rf $RPM_BUILD_ROOT
 %{eclipsedir}/plugins/org.eclipse.wst.xsdeditor.doc.user_*.jar
 %{eclipsedir}/plugins/org.eclipse.wst.xsd.ui_*.jar
 %{eclipsedir}/plugins/org.uddi4j_*.jar
-
-
-%{eclipsedir}/features/org.eclipse.jpt.feature_*
-%{eclipsedir}/features/org.eclipse.jst_*
-%{eclipsedir}/features/org.eclipse.jst.common_*
-%{eclipsedir}/features/org.eclipse.jst.enterprise_*
-%{eclipsedir}/features/org.eclipse.jst.server_*
-%{eclipsedir}/features/org.eclipse.jst.web_*
-%{eclipsedir}/features/org.eclipse.jst.webpageeditor.feature_*
-%{eclipsedir}/plugins/org.eclipse.jst.server.generic.jboss_*
-%{eclipsedir}/plugins/org.eclipse.jst.server.generic.jonas_*
-%{eclipsedir}/plugins/org.eclipse.jst.server.generic.oc4j_*
-%{eclipsedir}/plugins/org.eclipse.jst.server.websphere.core_*
-%{eclipsedir}/plugins/org.eclipse.jst.ws.consumption_*
-%{eclipsedir}/plugins/org.eclipse.wst.command.env_*
-%{eclipsedir}/plugins/org.eclipse.jst.ws.consumption.infopop_*.jar
-%{eclipsedir}/plugins/org.eclipse.wst.command.env.core_*.jar
-%{eclipsedir}/plugins/org.eclipse.wst.command.env.doc.user_*.jar
-%{eclipsedir}/plugins/org.eclipse.wst.command.env.infopop_*.jar
-%{eclipsedir}/plugins/org.eclipse.wst.command.env.ui_*.jar
