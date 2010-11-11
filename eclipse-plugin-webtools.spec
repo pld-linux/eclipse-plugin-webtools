@@ -2,7 +2,7 @@
 Summary:	Web Tools Platform (WTP) Project
 Name:		eclipse-plugin-webtools
 Version:	2.0.3
-Release:	0.2
+Release:	1
 License:	EPL v1.0
 Group:		Development/Tools
 URL:		http://www.eclipse.org/webtools/
