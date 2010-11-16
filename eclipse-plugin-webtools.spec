@@ -2,7 +2,7 @@
 Summary:	Web Tools Platform (WTP) Project
 Name:		eclipse-plugin-webtools
 Version:	2.0.3
-Release:	1
+Release:	2
 License:	EPL v1.0
 Group:		Development/Tools
 URL:		http://www.eclipse.org/webtools/
@@ -10,10 +10,10 @@ Source0:	http://archive.eclipse.org/webtools/downloads/drops/R2.0/R-%{version}-2
 # Source0-md5:	50b71ffba34da650dfa259388c043ab3
 BuildRequires:	rpm-javaprov
 BuildRequires:	unzip
-#Requires:	dtp-sdk >= 1.5.2
 Requires:	eclipse >= 3.3
+Requires:	eclipse-dtp >= 1.5.2
+Requires:	eclipse-emf-sdo-xsd >= 2.3
 Requires:	eclipse-gef >= 3.3.2
-#Requires:	emf-sdo-xsd-sdk >= 2.3
 #Suggests:	eclipse-test-framework >= 3.3
 #Suggests:	org.eclipse.releng.tools >= 3.3
 BuildArch:	noarch
@@ -30,7 +30,6 @@ and APIs to support deploying, running, and testing apps.
 
 %prep
 %setup -qc
-
 mv eclipse/*.html .
 
 %install
