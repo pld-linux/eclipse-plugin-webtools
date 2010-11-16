@@ -8,6 +8,8 @@ Group:		Development/Tools
 URL:		http://www.eclipse.org/webtools/
 Source0:	http://archive.eclipse.org/webtools/downloads/drops/R2.0/R-%{version}-20080710044639/wtp-R-%{version}-20080710044639.zip
 # Source0-md5:	50b71ffba34da650dfa259388c043ab3
+Source1:	http://archive.eclipse.org/webtools/downloads/drops/R2.0/R-%{version}-20080710044639/wtp-wst-R-%{version}-20080710044639.zip
+# Source1-md5:	50b71ffba34da650dfa259388c043ab3
 BuildRequires:	rpm-javaprov
 BuildRequires:	unzip
 #Requires:	dtp-sdk >= 1.5.2
@@ -29,7 +31,7 @@ wizards and built-in applications to simplify development, and tools
 and APIs to support deploying, running, and testing apps.
 
 %prep
-%setup -qc
+%setup -qc -a1
 
 mv eclipse/*.html .
 
