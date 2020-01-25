@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	Web Tools Platform (WTP) Project
 Name:		eclipse-plugin-webtools
 Version:	2.0.3
